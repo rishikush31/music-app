@@ -25,7 +25,6 @@ let songs = [
         audioElem.onloadedmetadata = function() {
         let totalmin = parseInt(audioElem.duration / 60) < 10 ? `0${parseInt(audioElem.duration / 60)}` : `${parseInt(audioElem.duration / 60)}`;
         let totalsec = parseInt(audioElem.duration % 60) < 10 ? `0${parseInt(audioElem.duration % 60)}` : `${parseInt(audioElem.duration % 60)}`;
-        // console.log(totalmin,totalsec);
         console.log(totalmin, totalsec);
         // document.getElementsByClassName("tottimeinhead")[i].innerHTML=
         document.getElementsByClassName("tottimeinhead")[i].innerHTML = `${totalmin}:${totalsec}`;
