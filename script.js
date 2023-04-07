@@ -21,6 +21,7 @@ let songs = [
     let i=0;
     songs.forEach(async (element,i)=>
     {
+        
         let audioElem=new Audio(element.filePath);
         audioElem.onloadedmetadata = function() {
         let totalmin = parseInt(audioElem.duration / 60) < 10 ? `0${parseInt(audioElem.duration / 60)}` : `${parseInt(audioElem.duration / 60)}`;
