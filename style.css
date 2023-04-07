@@ -8,7 +8,7 @@
 body
 {
     background-color: antiquewhite;
-    min-height: 100%;
+    min-height: 100rem;
 }
 .logo {
     display: flex;
@@ -61,8 +61,9 @@ body
     min-width:100vh;    
     width: 100%;
     background-color: black;
-    height: 4rem;
-    bottom: 0;
+    height: 5rem;
+    max-height: 5rem;
+    bottom: 0px;
     /* margin-bottom: 0; */
     position: fixed;
 }
@@ -74,7 +75,8 @@ body
     /* min-height: 81vh; */
     min-width:100vh;
     /* bottom: 0; */
-    height: 100vh;
+    height: 100rem;
+    min-height: 92rem;
     /* background-size: 100vw; */
     color: white;
     display: flex;
@@ -103,8 +105,9 @@ body
     /* border-radius: 5px; */
 }
 .songLists {
-    /* display: flex; */
-    /* flex: column; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-image: url('./img/wallpapertip_berserk-iphone-wallpaper_470998.jpg');
     /* object-fit: cover; */
     background-size: 100%;
@@ -115,7 +118,8 @@ body
     margin: 1rem auto;
     min-width: 80%;
     width: 90%;
-    min-height: 140vh;
+    min-height: 92rem;
+    height: 93rem;
     /* display: flex; */
     /* height: 100%; */
     /* object-fit: contain; */
@@ -160,7 +164,7 @@ body
     
     /* overflow-x: hidden; */
     min-width: 75vh;
-    height: 46px;
+    height: 60%;
     /* float: left; */
 }
 
