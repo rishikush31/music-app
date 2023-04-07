@@ -65,7 +65,6 @@ body
     bottom: 0;
     /* margin-bottom: 0; */
     position: fixed;
-    z-index: 1;
 }
 
 .container {
@@ -75,7 +74,7 @@ body
     /* min-height: 81vh; */
     min-width:100vh;
     /* bottom: 0; */
-    height: 100%;
+    height: 100vh;
     /* background-size: 100vw; */
     color: white;
     display: flex;
@@ -104,8 +103,8 @@ body
     /* border-radius: 5px; */
 }
 .songLists {
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex: column; */
     background-image: url('./img/wallpapertip_berserk-iphone-wallpaper_470998.jpg');
     /* object-fit: cover; */
     background-size: 100%;
@@ -116,8 +115,7 @@ body
     margin: 1rem auto;
     min-width: 80%;
     width: 90%;
-    /* min-height: auto; */
-    height: 170vh;
+    min-height: 140vh;
     /* display: flex; */
     /* height: 100%; */
     /* object-fit: contain; */
@@ -134,22 +132,12 @@ body
 }
 
 .songLists div {
-    margin: 0.5rem 1rem;
+    margin: 1rem 1rem;
     /* font-size: larger; */
 }
-.tottimeinhead
-{
-    /* margin: 0; */
-    padding: 10% 0px;
-    
-}
-/* .fas
-{
-    padding: 0px 0px;
-} */
+
 .heading {
     font-family: 'Ubuntu', sans-serif;
-    /* margin-top: 100px; */
 }
 
 .songitem img {
@@ -169,8 +157,7 @@ body
     align-items: center;
     color: black;
     width: 50%;
-    /* margin-top: 2rem; */
-    /* justify-content: space-between; */
+    
     /* overflow-x: hidden; */
     min-width: 75vh;
     height: 46px;
@@ -182,13 +169,11 @@ body
 }
 
 .songlistplay span i {
-    margin: auto 5px;
+    margin: auto 5px 10px;
     cursor: pointer;
 }
 .list
 {
-    /* margin-top: 2rem; */
-    justify-content: space-between;
     margin-top: 4px;
 }
 .heading h2

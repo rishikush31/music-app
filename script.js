@@ -17,19 +17,12 @@ let songs = [
     { songName: "No Surprises", filePath: "./music/No Surpriese.mp3", coverPath: "./img/cover_Radiohead.jpeg" },
     { songName: "Mother Mother - Verbatim", filePath: "./music/Mother Mother - Verbatim.mp3", coverPath: "./img/cover_Verbatim.jpeg" },
 ];
-
+const setval =async ()=>
+{
     let i=0;
     songs.forEach(async (element,i)=>
     {
-        let audioElem=new Audio(element.filePath);
-        audioElem.onloadedmetadata = function() {
-        let totalmin = parseInt(audioElem.duration / 60) < 10 ? `0${parseInt(audioElem.duration / 60)}` : `${parseInt(audioElem.duration / 60)}`;
-        let totalsec = parseInt(audioElem.duration % 60) < 10 ? `0${parseInt(audioElem.duration % 60)}` : `${parseInt(audioElem.duration % 60)}`;
-        console.log(totalmin, totalsec);
-        // document.getElementsByClassName("tottimeinhead")[i].innerHTML=
-        document.getElementsByClassName("tottimeinhead")[i].innerHTML = `${totalmin}:${totalsec}`;
-        i++;
-        };
+        let value=new Audio(element.filePath);
         
         // let myPromise=new Promise(function(resolve,reject)
         // {
@@ -40,18 +33,24 @@ let songs = [
         // myPromise.then(function(value)
         // {
         //     audioElem=value;
-        //     
+        //     let totalmin = parseInt(audioElem.duration / 60) < 10 ? `0${parseInt(audioElem.duration / 60)}` : `${parseInt(audioElem.duration / 60)}`;
+        // let totalsec = parseInt(audioElem.duration % 60) < 10 ? `0${parseInt(audioElem.duration % 60)}` : `${parseInt(audioElem.duration % 60)}`;
+        // // console.log(totalmin,totalsec);
+        // console.log(totalmin, totalsec);
+        // // document.getElementsByClassName("tottimeinhead")[i].innerHTML=
+        // document.getElementsByClassName("tottimeinhead")[i].innerHTML = `${totalmin}:${totalsec}`;
+        // i++;
         // }
         // );
         // let audioElem=new Audio(element.filePath);
-    
+        i++;
         
     })
 
-
-
+}
+setval();
 let ind2=0;
- i=0;
+let i=0;
 
 // let i = 0;
 i=0;
